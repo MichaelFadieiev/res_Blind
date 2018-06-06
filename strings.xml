@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<strings>
+	<string name="skl_wpn_blt">Владение тупым оружием</string>
+	<string name="skl_wpn_slh">Владение режущим оружием</string>
+	<string name="skl_wpn_prc">Владение колющим оружием</string>
+	<string name="skl_wpn_hck">Владение рубящим оружием</string>
+	<string name="skl_wpn_sht">Стрельба</string>
+	<string name="skl_wpn_trw">Метание</string>
+	<string name="skl_brh">Рукопашный бой</string>
+	<string name="skl_hnt">Охота</string>
+	<string name="skl_ptf">Следопыт</string>
+	<string name="skl_mtl">Металлообработка</string>
+	<string name="skl_wdc">Деревообработка</string>
+	<string name="skl_stn">Камнеобработка</string>
+	<string name="skl_ktl">Скотоводство</string>
+	<string name="skl_agr">Земледелие</string>
+	<string name="skl_mnr">Шахтерское ремесло</string>
+	<string name="skl_bld">Строительство</string>
+	<string name="skl_trd">Торговля</string>
+	<string name="skl_spc">Общение</string>
+	<string name="skl_thv">Воровство</string>
+	<string name="skl_srv">Выживание</string>
+	
+	<string name="stt_hpt">Здоровье</string>
+	<string name="stt_stm">Запас сил</string>
+	<string name="stt_ftg">Усталость</string>
+	<string name="stt_hng">Голод</string>
+	<string name="stt_thr">Жажда</string>
+	
+	<!--Misc-->
+	<string name="act_rak">Разгребать</string>
+	<string name="act_atk">Атаковать</string>
+	<string name="act_thr">Швырнуть</string>
+	<string name="act_spk">Говорить</string>
+	<string name="act_lar">Быстро осмотреться</string>
+	<string name="act_prc">Внимательно осмотреть все вокруг</string>
+	
+	<!--Mining-->
+	<string name="act_mnr_">Добывать ~resources_miner~</string>
+	<string name="act_mnr_">Разрабатывать шахту</string>
+	
+	<!--Surviving-->
+	<string name="act_srv_">Собирать ~resources_gather~</string>
+	<string name="act_srv_">Разбить костер</string>
+	<string name="act_srv_">Собирать</string>
+	
+	<!--Agriculture-->
+	<string name="act_">Подготовить ~field_size~ поле</string>
+	<string name="act_">Засадить ~field_size~ поле: ~crop~</string>
+	
+	<!--Woodprocessing-->
+	<string name="act_">Добывать древесину</string>
+	<string name="act_"></string>
+	
+	<!--Stoneprocessing-->
+	<string name="act_"></string>
+	
+	<!--Metalprocessing-->
+	<string name="act_"></string>
+	
+	<!--Clothprocessing-->
+	<string name="act_"></string>
+	<string name="act_"></string>
+	<string name="act_"></string>
+	<string name="act_"></string>
+	<string name="act_"></string>
+	
+</strings>
