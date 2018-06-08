@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<names>
+	<males>
+		<name>Иван</name>
+		<name>Джозеф</name>
+		<name>Ким</name>
+		<name>Михаил</name>
+		<name>Эван</name>
+		<name>Родриго</name>
+		<name>Александр</name>
+		<name>Артур</name>
+		<name>Фредерик</name>
+		<name>Ян</name>
+	</males>
+	
+	<females>
+		<name>Сакура</name>
+		<name>Анна</name>
+		<name>Сильвия</name>
+		<name>Лидия</name>
+		<name>Марина</name>
+		<name>Мария</name>
+		<name>Александра</name>
+		<name>Хироко</name>
+		<name>Кэтрин</name>
+		<name>Жаклин</name>
+	</females>
+	
+	<surnames>
+		<name>Смит</name>
+		<name>Сало</name>
+		<name>Родригес</name>
+		<name>Кузьменко</name>
+		<name>Васильев</name>
+		<name>Крутц</name>
+		<name>Куросава</name>
+		<name>Блиц</name>
+		<name>Невзоров</name>
+		<name>Шредингер</name>
+	</surnames>
+	
+</names>
