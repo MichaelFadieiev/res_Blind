@@ -1,0 +1,10 @@
+switch (skl) {
+    case lvl_skl_master
+}
+
+if (skl >= lvl_skl_master_value) {System.out.println(lvl_skl_master_name}
+else if (skl >= lvl_skl_professional_value) {System.out.println(lvl_skl_professional_name}
+else if (skl >= lvl_skl_skillful_value) {System.out.println(lvl_skl_skillful_name}
+else if (skl >= lvl_skl_amator_value) {System.out.println(lvl_skl_amator_name}
+else if (skl >= lvl_skl_newby_value) {System.out.println(lvl_skl_newby_name};
+
