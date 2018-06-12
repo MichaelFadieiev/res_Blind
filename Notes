@@ -7,4 +7,67 @@ else if (skl >= lvl_skl_professional_value) {System.out.println(lvl_skl_professi
 else if (skl >= lvl_skl_skillful_value) {System.out.println(lvl_skl_skillful_name}
 else if (skl >= lvl_skl_amator_value) {System.out.println(lvl_skl_amator_name}
 else if (skl >= lvl_skl_newby_value) {System.out.println(lvl_skl_newby_name};
+------------------------------------------------
+import java.util.ArrayList;
+import java.util.Random;
 
+public class Catalogue
+{
+    private Random randomGenerator;
+    private ArrayList<Item> catalogue;
+
+    public Catalogue()
+    { 
+        catalogue = new ArrayList<Item>();
+        randomGenerator = new Random();
+    }
+
+    public Item anyItem()
+    {
+        int index = randomGenerator.nextInt(catalogue.size());
+        Item item = catalogue.get(index);
+        System.out.println("Managers choice this week" + item + "our recommendation to you");
+        return item;
+    }
+}
+---------------------------------------------
+
+ArrayList<ItemType> inventory = new ArrayList(0);
+inventory.add(ItemType);
+
+boolean inventory.add(apple);
+inventory.clear();
+boolean inventory.contains(rock);
+boolean inventory.isEmpty();
+boolean inventory.remove(sword);
+ItemType inventory.remove(1);
+inventory.removeAll(collection<>);
+ItemType inventory.set(1, stick);
+int inventory.size();
+ItemType[] inventory.toArray();
+
+HashMap<String, ItemType> onProtagonist = new HashMap(8, 1.0);
+onProtagonist.set("r_hnd", NULL);
+onProtagonist.set("l_hnd", NULL);
+onProtagonist.set("head", NULL);
+onProtagonist.set("body", NULL);
+onProtagonist.set("legs", NULL);
+onProtagonist.set("hands", NULL);
+onProtagonist.set("feets", NULL);
+
+onProtagonist.clear();
+onProtagonist.replace("l_hnd", shield);
+onProtagonist.get("r_hnd");
+onProtagonist.keySet();
+boolean onProtagonist.containsValue(shield);
+boolean onProtagonist.containsKey("head");
+onProtagonist.isEmpty();
+onProtagonist.put("r_hnd", apple);
+Collection<ItemType> onProtagonist.values();
+
+class ItemType {
+    public float lifeLeft;
+    public String name, id, description, ; //id not unique!
+    public int weight, size, cost, quantity, ;
+    public float[6] atack_rate;
+}
