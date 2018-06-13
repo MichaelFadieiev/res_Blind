@@ -63,6 +63,7 @@ boolean onProtagonist.containsValue(shield);
 boolean onProtagonist.containsKey("head");
 onProtagonist.isEmpty();
 onProtagonist.put("r_hnd", apple);
+onProtagonist.putAll(onProtagonist2)
 Collection<ItemType> onProtagonist.values();
 --------------------------------------------------------
 class ItemType {
@@ -108,6 +109,22 @@ class TerritoryType {
     	active = false;
 	//save to drive name, type, description, sizeFreeFarm, sizeFreeBuild, sizeOverall
     }
+    
+    public void spawn (PersonType p_person) {
+    	
+    }
+    public void spawn(String p_name, 
+    		      String p_surname,
+		      int p_age,
+		      HashMap<char, int> p_stats, 
+		      HashMap<String, int> p_skills,
+		      ArrayList<ItemType> p_inventory) {
+	name = p_name;
+	surname = p_surname;
+	age = p_age;
+	
+    }
+		      
 }
 --------------------------------------------------
 class PlaceType {
@@ -199,3 +216,5 @@ class PlaceType {
 	<item>c</item><!--container, volume-->
 	<item>a</item><!--ammo, with type of projectile device {1-bow, 2-crossbow, 3-sling, 4-9mm, 5-5.45mm, 6-7.62mm}-->
 </string-array>    
+------------------------------------------------------
+Byte.toString(stt_key)
