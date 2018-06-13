@@ -85,6 +85,7 @@ class ItemType {
 --------------------------------------------------
 class TerritoryType {
     public int xAxis, yAxis, sizeFreeFarm, sizeFreeBuild, sizeOverall;
+    public HashMap<byte, int>
     public String id, type, name, description;
     public HashMap<String, Integer> places, resourcesHidd, resourcesExpl, itemsHidd, itemsExpl; //with size
     public boolean active; //is the protagonist in it
@@ -110,10 +111,14 @@ class TerritoryType {
 	//save to drive name, type, description, sizeFreeFarm, sizeFreeBuild, sizeOverall
     }
     
-    public void spawn (PersonType p_person) {
+    public void spawn(PersonType p_person) {
     	
     }
-    public void spawn(String p_name, 
+    
+		      
+}
+--------------------------------------------------
+public void spawn(String p_name, 
     		      String p_surname,
 		      int p_age,
 		      HashMap<char, int> p_stats, 
@@ -124,8 +129,6 @@ class TerritoryType {
 	age = p_age;
 	
     }
-		      
-}
 --------------------------------------------------
 class PlaceType {
     public int 
@@ -218,3 +221,65 @@ class PlaceType {
 </string-array>    
 ------------------------------------------------------
 Byte.toString(stt_key)
+String.valueOf(stt_key)
+
+boolean endsWith(String suffix)
+filename.toString().substring(0, filename.getString().lastIndexOf("."));
+-------------------------------------------------------
+//deprecated
+public String namePadej (String p_string, char p_gender, char p_padej) {
+	switch (p_padej) {
+		case 'i': return p_string;
+		case 'r': if (endsWith("ев") || endsWith("ов") || endsWith("ин") || endsWith("ан")) {return (p_string + "а");}
+		case 'd':
+		case 'v':
+		case 't':
+		case 'p':
+}
+/* i imenitelnyi
+   r roditelnyi
+   d datelnyi
+   v velitelnyi
+   t tvoritelnyi
+   p predlojnyi
+   */
+
+public String surnameFM (String p_string) {
+	if (endsWith("ев") || endsWith("ов") || endsWith("ин")) {return (p_string + "а");}
+	else if (endsWith("ий") || endsWith("ый")) {return (p_string.substring(0, p_string.length()-3) + "ая");}
+	else {return p_string;}
+}
+
+queue time stack
+after every protagonist action (TIC): 
+first - calculates the result of previously planned actions of NPC
+second - added new planned actions in the stack after first phase.
+------------------------------------------------------
+public boolean checkName (String p_name) {
+	p_name = p_name.trim();
+	if (p_name.matches("[^ a-zA-Zа-яА-Я\'\"]") || p_name.isEmpty()) {return false;}
+	else {return true;} 
+	
+}
+------------------------------------------------------
+TextView tvCatsInfo = (TextView)findViewById(R.id.textView1);
+tvCatsInfo.setText(R.string.aboutcat);
+
+<string name="aboutcat">У кота по имени %1$s %2$s лапы, %3$s хвост. Ему %4$d лет</string>
+
+String strBarsik = "Барсик";
+String strPaws = "четыре";
+String strTail = "один";
+int year = 5;  
+String strCats = getResources().getString(R.string.aboutcat);  
+String strFinal = String.format(strCats, strBarsik, strPaws, strTail, year);  
+tvCatsInfo.setText(strFinal);
+String strVaska = "Васька";
+year = 6;
+String strFinal = String.format(strCats, strVaska, strPaws, strTail, year);  
+tvCatsInfo.setText(strFinal);
+
+--------------------------------------------------
+add variable String status into PersonType class
+	ArrayList<byte> modes;
+	byte nature;
