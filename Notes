@@ -283,3 +283,63 @@ tvCatsInfo.setText(strFinal);
 add variable String status into PersonType class
 	ArrayList<byte> modes;
 	byte nature;
+	int karma;//steal '-0.05*cost_of_items', kill_(wo)man '30*(karma_victim-30)', start_atack '
+	
+	
+	
+---------------------------------------------------
+global constant/values:
+
+hero_krm_brd		100
+good_krm_brd		50
+outlaw_krm_brd		-20
+evilLord_krm_brd	-80
+
+kill_krm_mod
+steal_krm_mod
+startFight_krm_mod
+help0_krm_mod
+help1_krm_mod
+help2_krm_mod
+help3_krm_mod
+help4_krm_mod
+
+age_groups [5, 15, 50]
+age_limits [60, 100]
+
+int strt_attrP = 15;
+int strt_sklProff = 40;
+int strt_sklHobby = 20;
+int strt_sklInter = 10;
+int stat_max 10
+int stat_lim 12
+int skill_lim 100
+int[] skill_groups [5, 20, 40, 65, 85]	Новичок, Любитель, Опытный, Професcионал, Мастер
+int[] tree_age_groups [1, 10, 30, 100]	Саженец, Деревце, Дерево, Большое дерево, Огромное дерево
+
+int max_hp 	1000	очки жизни
+int max_stm 	1000	очки выносливости
+int max_exh	1000	очки усталости
+int max_hng	1000	очки голода
+int max_thr	1000	очки жажды
+
+range_hp	[0, 100, 300, 600, 900, 1000]	Вы умерли, Критическое состояние (без медицинской помощи вы погибнете), Вы серьезно ранены, Вы ранены, Вы здоровы, max
+rng_stm		[0, 200, 1000]	Вы не можете пошевелиться из-за усталости, Вы еле передвигаетесь от усталости, Вы устали, Вы полны сил, max
+rng_exh		[0, 300, 1000]	Вы потеряли сознание от измождения, Вы хотите спать, Вы бодры, max
+rng_hng		[0, 300, 700, 1000]	Вы умерли от голода, Вы изнемогаете от голода, Вы голодны, Вы сыты, max
+rng_thr		[0, 300, 700, 1000]	Вы умерли от жажды, Вы обезвожены, Вы хотите пить, Вы не хотите пить, max
+
+rng_year	[300, 450] days
+rng_month	[10, 14] months
+rng_day		[1200, 1920] min
+rng_dayTime	[5, 6, 9, 18, 20, 22] hr	Ночь, Рассвет, Утро, День, Темнеет, Вечер
+rng_dayTime	[20, 25, 38, 75, 83, 92] %
+
+1 ед площади территории = 10 м2
+1 ед объёма локации = 1 м3
+1 ед объёма инвентаря = 1 см3
+1 ед веса = 1 г
+1 ед игрового времени = 1 минута
+1 ед валюты = 1 медная монета
+100 медных монет = 1 серебрянная монета
+12 серебрянных монет = 1 золотая монета
