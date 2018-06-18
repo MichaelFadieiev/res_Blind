@@ -81,7 +81,8 @@ Place keys ("plc"+plc_key)
 Territory mods keys ("trm"+trm_key)
 0		река
 1		лес
-2		телесре
+2		ферма
+3   телесре
 
 Place mods keys ("plm"+plm_key)
 0		скрытый
@@ -101,7 +102,7 @@ Person mods keys ("prm"+prm_key)
 8   
 9   
 
-Person statuses ("pst"+pst_key)
+Person statuses ("pst"+pst_key) (+Actions)
 0   Отдыхает
 1   Валит лес
 2   Заготавливает доски
