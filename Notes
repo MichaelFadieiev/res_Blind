@@ -329,9 +329,9 @@ rng_exh		[0, 300, 1000]	Вы потеряли сознание от изможд
 rng_hng		[0, 300, 700, 1000]	Вы умерли от голода, Вы изнемогаете от голода, Вы голодны, Вы сыты, max
 rng_thr		[0, 300, 700, 1000]	Вы умерли от жажды, Вы обезвожены, Вы хотите пить, Вы не хотите пить, max
 
-rng_year	[300, 450] days
+//rng_year	[300, 450] days //not used!
 rng_month	[10, 14] months
-rng_day		[1200, 1920] min
+rng_day		[1200, 1920] min // deprecated
 rng_dayTime	[5, 6, 9, 18, 20, 22] hr	Ночь, Рассвет, Утро, День, Темнеет, Вечер
 rng_dayTime	[20, 25, 38, 75, 83, 92] %
 
@@ -343,3 +343,59 @@ rng_dayTime	[20, 25, 38, 75, 83, 92] %
 1 ед валюты = 1 медная монета
 100 медных монет = 1 серебрянная монета
 12 серебрянных монет = 1 золотая монета
+
+startYear = 
+startMonth = 
+startDay = 
+startHour = 00
+startMinute = 00
+---------------------------------------
+rng_time {months_min_year, months_rng_year, 
+	days_min_month, days_rng_month, 
+	hours_min_day, hours_rng_day}
+----
+import java.util.Random;
+
+int[] rng_time = {10, 14, 28, 32, 20, 32};
+int[] timeConst = new int[3]; //месяцев в году, часов в дне, минут в часе {12, 24, 60}
+int[] dayMonth; //дней в месяцах {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
+
+private Random randomGenerator;
+
+randomGenerator = new Random();
+
+timeConst[0] = rng_time[0] + randomGenerator.nextInt(rng_time[1]);
+dayMonth = new int[timeConst[0]];
+for (int i=0; i<timeConst[0]; i++) {dayMonth[i] = rng_time[2] + randomGenerator.nextInt(rng_time[3]);}
+//for (int i=0; i<timeConst.lenght-1; i++) {timeConst[i] = rng_time[2*i] + randomGenerator.nextInt(rng_time[(2*i)+1]);} --для одинаковых месяцев!!!
+timeConst[1] = rng_time[4] + randomGenerator.nextInt(rng_time[5]);
+timeConst[2] = 60;
+
+Time
+int[] dateTime = {1193, 4, 5, 0, 0};//startYear, startMonth, startDay, startHour, startMinute (учесть счет с нуля для месяца и дня!!!)
+
+private int[] flowTime (int[] p_dateTime, int p_minutsDuration) {
+	int v_min, v_hrs, v_dys, v_mth, v_yrs;
+	int[] v_DT = p_dateTime;
+	v_min = v_DT[4] + p_minutsDuration
+	v_hrs = v_min / timeConst[2];
+	v_DT[4] = v_min % timeConst[2];
+	if (v_hrs > 0) {
+		v_hrs = v_DT[3] + v_hrs;
+		v_dys = v_hrs / timeConst[1];
+		v_DT[3] = v_hrs % timeConst[1];
+		if (v_dys > 0) {
+			v_dys += v_DT[2];
+			while (v_dys > dayMonth[v_DT[1]]) { //условие инкремента месяца
+				v_dys -= dayMonth[v_DT[1]];
+				v_DT[1] ++;	//инкремент месяца
+				if (v_DT[1] > timeConst[0]) { //инкремент года
+					v_DT[0]++;
+					v_DT[1] = 1;
+				}
+			}
+			v_DT[2] = v_dys;
+		}
+	}
+	return v_DT;
+}
