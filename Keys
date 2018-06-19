@@ -136,3 +136,15 @@ Person statuses ("pst"+pst_key) (+Actions)
 30  Охотится
 31  Рыбачит
 32  Собирает ягоды
+
+Resources:
+0 wood
+1 stone
+2 iron ore
+3 copper ore
+4 silver ore
+5 gold ore
+6 fish
+7 small prey
+8 wild berries
+9 clay
