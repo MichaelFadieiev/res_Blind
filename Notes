@@ -399,3 +399,26 @@ private int[] flowTime (int[] p_dateTime, int p_minutsDuration) {
 	}
 	return v_DT;
 }
+--------------------------------------------------------
+Resources: wood
+//info about explored state is keeped in the PersonType
+in TerritoryType variable (container) resources
+SparseArray<int[]> resources; //{type, quantity}
+
+resHid = new SparseArray<int[2]>(5)
+resources = new SparseArray<>(5);
+int[] resTemp = new resTemp[2];
+resTemp[0] = 0;
+resTemp[1] = 
+resources.add(new {
+
+--------------------------------------------------------
+SparseArray<ItemType
+
+public void itemDescriptionPopUp (ItemType p_item) {
+	//отображать количество, среднее качество и наличие "почти мусор" (скоро прийдет в негодность), 
+	//описание, возможности раздробить и выбросить (ползунок с двумя кнопками), кнопка "Съесть"
+	LinearLayout itemPopupDesc;
+	
+}
+
