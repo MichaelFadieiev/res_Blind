@@ -3,6 +3,17 @@ v=100000
 lt=525600 (year)
 value = c/(v+2w)(*lt?)*100000
 
+chest
+
+
+barrel
+
+bottle
+
+cart
+
+wagon
+
 
 copper coin (vl=14300)
 v=1
@@ -26,14 +37,14 @@ c=1200
 lt=0-0
 tg=[eternal, coin]
 
-wood (chank) (83)
+wood (log or plank) (83)
 v=1000
 w=700
 c=2
 lt=3500000-25000000
 
 
-stone (chank) (75)
+stone (chank or block) (75)
 v=1000
 w=2600
 c=4
