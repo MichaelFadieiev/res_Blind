@@ -314,8 +314,8 @@ int strt_sklInter = 10;
 int stat_max 10
 int stat_lim 12
 int skill_lim 100
-int[] skill_groups [5, 20, 40, 65, 85]	Новичок, Любитель, Опытный, Професcионал, Мастер
-int[] tree_age_groups [1, 10, 30, 100]	Саженец, Деревце, Дерево, Большое дерево, Огромное дерево
+
+//int[] tree_age_groups [1, 10, 30, 100]	Саженец, Деревце, Дерево, Большое дерево, Огромное дерево - deprecated
 
 int max_hp 	1000	очки жизни
 int max_stm 	1000	очки выносливости
@@ -403,7 +403,12 @@ private int[] flowTime (int[] p_dateTime, int p_minutsDuration) {
 Resources: wood
 //info about explored state is keeped in the PersonType
 in TerritoryType variable (container) resources
-SparseArray<int[]> resources; //{type, quantity}
+SparseArray<int[]> resourcesExpl; //{type, quantity}
+SparseArray<int[]> resourcesHidd; //{type, quantity}
+SparseArray<int[]> persons; //{type, quantity}
+SparseArray<int[]> personsHidd; //{type, quantity}
+SparseArray<int[]> ; //{type, quantity}
+SparseArray<int[]> ; //{type, quantity}
 
 resHid = new SparseArray<int[2]>(5)
 resources = new SparseArray<>(5);
@@ -413,8 +418,6 @@ resTemp[1] =
 resources.add(new {
 
 --------------------------------------------------------
-SparseArray<ItemType
-
 public void itemDescriptionPopUp (ItemType p_item) {
 	//отображать количество, среднее качество и наличие "почти мусор" (скоро прийдет в негодность), 
 	//описание, возможности раздробить и выбросить (ползунок с двумя кнопками), кнопка "Съесть"
@@ -422,3 +425,81 @@ public void itemDescriptionPopUp (ItemType p_item) {
 	
 }
 
+----------------------------------------------------
+for naming skills, stats etc. use loop through the TextView[]
+
+-----------------------------------------------------
+for fight use subtime mode with seconds as timeUnit
+after ending fight mode do not forget to calculate the other actors
+
+-------------------------------------------------------
+add class ParserJSON
+method getItem return ItemType or raw parameters
+method getResourses
+method getPerson
+method getLocation
+method getTerritory
+
+-----------------------------------------------------
+Inventory
+ArrayList<ItemType> inventory;
+SparseArray<ItemType> 
+method itemUse
+method itemDrop
+method itemAdd
+method item
+
+---------------------------------------------------
+<integer-array name="rng_skills">
+	<item>0</item>
+	<item>20</item>
+	<item>40</item>
+	<item>65</item>
+	<item>85</item>
+</integer-array>
+
+<string-array name="txt_skills">
+	<item>Новичок</item>
+	<item>Любитель</item>
+	<item>Опытный</item>
+	<item>Професcионал</item>
+	<item>Мастер</item>
+</string-array>
+
+
+int[] skill_groups = new Resources().getIntArray(R.array.rng_skills);
+String[] skill_levels = new Resources().getIntArray(R.array.rng_skills);
+
+LinearLayout skillsLL = getViewByID(R.id.v3_skillsLL);
+LinearLayout skillRowLL;
+TextView textTV1, textTV2;
+for (int j=0; j < actorP.skills.size(); j++) {
+	skillRowLL = new LinearLayout();
+	textTV1 = new TextView();
+	textTV1.setText(Resources().getString(Resources.getIdentifier(...)));
+	textTV2 = new TextView();
+	for (int i=skill_groups.lengh-1; i >= 0; i--) {
+		if (actorP.skills.get(j) >= skill_groups[i]) {
+			textTV2.putText(skill_levels[i]);
+			break;
+		}
+	}
+	skillRowLL.addView(textTV1);
+	skillRowLL.addView(textTV2);
+	skillsLL.addView(skillRowLL);
+}
+-------------------------------------------------------
+...
+String selected = spinner.getSelectedItem().toString();
+View proff_skl = spinner_proff.getSelectedItem();
+View hobby_skl = spinner_hobby.getSelectedItem();
+View inter_skl = spinner_inter.getSelectedItem();
+
+int[] skl1, skl2, skl3;
+skl1[0] = String.toInteger(proff_skl.getTag());
+skl1[1] = 40;
+skl1[0] = String.toInteger(hobby_skl.getTag());
+skl1[1] = 20;
+skl1[0] = String.toInteger(inter_skl.getTag());
+skl1[1] = 10;
+...
