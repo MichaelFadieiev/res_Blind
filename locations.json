@@ -1,0 +1,42 @@
+[
+  grave
+  {"id":0,
+   "sizeInner":[1, 10],
+   "sizeOuter":[1, 10],
+   "tags":[],
+   "timeConst":30, - per 1 unit of inner size
+   "lifetime":[7000, 10000],
+   "tools":[showel]
+  },
+  home (living building)
+  {"id":1,
+   "sizeInner":[10, 100],
+   "sizeOuter":[20, 200], - respective to sizeInner array
+   "tags":["habitable", "expandable"],
+   "timeConst":576, - per 1 unit of inner size
+   "lifetime":[5000000, 50000000],
+   "resources0":["wood", "stone", "iron", "steel"],
+   "resourcesQuantity0":[,,,] - for 1 unit of inner size,
+   "tools":[hammer]
+  },
+  mine
+  {"id":3,
+   "sizeInner":[3, 1000000],
+   "sizeOuter":[15, 30], - respective to sizeInner array
+   "tags":["expandable", "dark"],
+   "timeConst":60, - per 1 unit of inner size
+   "lifetime":[3500000, 50000000],
+   "resources0":["wood", "stone", "iron", "steel"],
+   "resourcesQuantity0":[,,,] - for 1 unit of inner size,
+   "tools":[showel, pickaxe]
+  },
+  quarry
+  {"id":4,
+   "sizeInner":[3, 1000000],
+   "sizeOuter":[3, 1000000], - respective to sizeInner array
+   "tags":["expandable", "eternal"],
+   "timeConst":60, - per 1 unit of inner size
+   "lifetime":[0,0],
+   "tools":[pickaxe]
+  },
+]
