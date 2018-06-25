@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <strings>
-	<string name="skl_wpn_blt">Владение тупым оружием</string>
-	<string name="skl_wpn_slh">Владение режущим оружием</string>
-	<string name="skl_wpn_prc">Владение колющим оружием</string>
-	<string name="skl_wpn_hck">Владение рубящим оружием</string>
-	<string name="skl_wpn_sht">Стрельба</string>
-	<string name="skl_wpn_trw">Метание</string>
-	<string name="skl_brh">Рукопашный бой</string>
-	<string name="skl_hnt">Охота</string>
-	<string name="skl_ptf">Следопыт</string>
-	<string name="skl_mtl">Металлообработка</string>
-	<string name="skl_wdc">Деревообработка</string>
-	<string name="skl_stn">Камнеобработка</string>
-	<string name="skl_ktl">Скотоводство</string>
-	<string name="skl_agr">Земледелие</string>
-	<string name="skl_mnr">Шахтерское ремесло</string>
-	<string name="skl_bld">Строительство</string>
-	<string name="skl_trd">Торговля</string>
-	<string name="skl_spc">Общение</string>
-	<string name="skl_thv">Воровство</string>
-	<string name="skl_srv">Выживание</string>
-	<string name="skl_swm">Плавание</string>
-	<string name="skl_mdc">Медицина</string>
+	<string name="skl_wpn_blt">Г‚Г«Г Г¤ГҐГ­ГЁГҐ ГІГіГЇГ»Г¬ Г®Г°ГіГ¦ГЁГҐГ¬</string>
+	<string name="skl_wpn_slh">Г‚Г«Г Г¤ГҐГ­ГЁГҐ Г°ГҐГ¦ГіГ№ГЁГ¬ Г®Г°ГіГ¦ГЁГҐГ¬</string>
+	<string name="skl_wpn_prc">Г‚Г«Г Г¤ГҐГ­ГЁГҐ ГЄГ®Г«ГѕГ№ГЁГ¬ Г®Г°ГіГ¦ГЁГҐГ¬</string>
+	<string name="skl_wpn_hck">Г‚Г«Г Г¤ГҐГ­ГЁГҐ Г°ГіГЎГїГ№ГЁГ¬ Г®Г°ГіГ¦ГЁГҐГ¬</string>
+	<string name="skl_wpn_sht">Г‘ГІГ°ГҐГ«ГјГЎГ </string>
+	<string name="skl_wpn_trw">ГЊГҐГІГ Г­ГЁГҐ</string>
+	<string name="skl_brh">ГђГіГЄГ®ГЇГ ГёГ­Г»Г© ГЎГ®Г©</string>
+	<string name="skl_hnt">ГЋГµГ®ГІГ </string>
+	<string name="skl_ptf">Г‘Г«ГҐГ¤Г®ГЇГ»ГІ</string>
+	<string name="skl_mtl">ГЊГҐГІГ Г«Г«Г®Г®ГЎГ°Г ГЎГ®ГІГЄГ </string>
+	<string name="skl_wdc">Г„ГҐГ°ГҐГўГ®Г®ГЎГ°Г ГЎГ®ГІГЄГ </string>
+	<string name="skl_stn">ГЉГ Г¬Г­ГҐГ®ГЎГ°Г ГЎГ®ГІГЄГ </string>
+	<string name="skl_ktl">Г‘ГЄГ®ГІГ®ГўГ®Г¤Г±ГІГўГ®</string>
+	<string name="skl_agr">Г‡ГҐГ¬Г«ГҐГ¤ГҐГ«ГЁГҐ</string>
+	<string name="skl_mnr">ГГ ГµГІГҐГ°Г±ГЄГ®ГҐ Г°ГҐГ¬ГҐГ±Г«Г®</string>
+	<string name="skl_bld">Г‘ГІГ°Г®ГЁГІГҐГ«ГјГ±ГІГўГ®</string>
+	<string name="skl_trd">Г’Г®Г°ГЈГ®ГўГ«Гї</string>
+	<string name="skl_spc">ГЋГЎГ№ГҐГ­ГЁГҐ</string>
+	<string name="skl_thv">Г‚Г®Г°Г®ГўГ±ГІГўГ®</string>
+	<string name="skl_srv">Г‚Г»Г¦ГЁГўГ Г­ГЁГҐ</string>
+	<string name="skl_swm">ГЏГ«Г ГўГ Г­ГЁГҐ</string>
+	<string name="skl_mdc">ГЊГҐГ¤ГЁГ¶ГЁГ­Г </string>
 	
-	<string name="stt_hpt">Здоровье</string>
-	<string name="stt_stm">Запас сил</string>
-	<string name="stt_ftg">Усталость</string>
-	<string name="stt_hng">Голод</string>
-	<string name="stt_thr">Жажда</string>
+	<string name="stt_hpt">Г‡Г¤Г®Г°Г®ГўГјГҐ</string>
+	<string name="stt_stm">Г‡Г ГЇГ Г± Г±ГЁГ«</string>
+	<string name="stt_ftg">Г“Г±ГІГ Г«Г®Г±ГІГј</string>
+	<string name="stt_hng">ГѓГ®Г«Г®Г¤</string>
+	<string name="stt_thr">Г†Г Г¦Г¤Г </string>
 	
 	<!--Resources_miner-->
-	<string name="res_irn">Железо</string>
-	<string name="res_gld">Золото</string>
-	<string name="res_cpr">Медь</string>
-	<string name="res_slv">Серебро</string>
+	<string name="res_irn">Г†ГҐГ«ГҐГ§Г®</string>
+	<string name="res_gld">Г‡Г®Г«Г®ГІГ®</string>
+	<string name="res_cpr">ГЊГҐГ¤Гј</string>
+	<string name="res_slv">Г‘ГҐГ°ГҐГЎГ°Г®</string>
 	<string name="res_"></string>
 	
 	<!--Misc-->
-	<string name="act_rak">Разгребать</string>
-	<string name="act_atk">Атаковать</string>
-	<string name="act_thr">Швырнуть</string>
-	<string name="act_spk">Говорить</string>
-	<string name="act_lar">Осмотреться</string>
-	<string name="act_prc">Исследовать место</string>
-	<string name="act_prc">Обыскать</string>
+	<string name="act_rak">ГђГ Г§ГЈГ°ГҐГЎГ ГІГј</string>
+	<string name="act_atk">ГЂГІГ ГЄГ®ГўГ ГІГј</string>
+	<string name="act_thr">ГГўГ»Г°Г­ГіГІГј</string>
+	<string name="act_spk">ГѓГ®ГўГ®Г°ГЁГІГј</string>
+	<string name="act_lar">ГЋГ±Г¬Г®ГІГ°ГҐГІГјГ±Гї</string>
+	<string name="act_prc">Г€Г±Г±Г«ГҐГ¤Г®ГўГ ГІГј Г¬ГҐГ±ГІГ®</string>
+	<string name="act_prc">ГЋГЎГ»Г±ГЄГ ГІГј</string>
 	
 	<!--Mining-->
-	<string name="act_mnr_">Добывать ~resources_miner~</string>
-	<string name="act_mnr_">Разрабатывать шахту</string>
+	<string name="act_mnr_">Г„Г®ГЎГ»ГўГ ГІГј ~resources_miner~</string>
+	<string name="act_mnr_">ГђГ Г§Г°Г ГЎГ ГІГ»ГўГ ГІГј ГёГ ГµГІГі</string>
 	
 	<!--Surviving-->
-	<string name="act_srv_">Собирать ~resources_gather~</string>
-	<string name="act_srv_">Разбить костер</string>
-	<string name="act_srv_">Собирать</string>
+	<string name="act_srv_">Г‘Г®ГЎГЁГ°Г ГІГј ~resources_gather~</string>
+	<string name="act_srv_">ГђГ Г§ГЎГЁГІГј ГЄГ®Г±ГІГҐГ°</string>
+	<string name="act_srv_">Г‘Г®ГЎГЁГ°Г ГІГј</string>
 	
 	<!--Agriculture-->
-	<string name="act_">Подготовить ~field_size~ поле</string>
-	<string name="act_">Засадить ~field_size~ поле: ~crop~</string>
+	<string name="act_">ГЏГ®Г¤ГЈГ®ГІГ®ГўГЁГІГј ~field_size~ ГЇГ®Г«ГҐ</string>
+	<string name="act_">Г‡Г Г±Г Г¤ГЁГІГј ~field_size~ ГЇГ®Г«ГҐ: ~crop~</string>
 	
 	<!--Woodprocessing-->
-	<string name="act_">Добывать древесину</string>
+	<string name="act_">Г„Г®ГЎГ»ГўГ ГІГј Г¤Г°ГҐГўГҐГ±ГЁГ­Гі</string>
 	<string name="act_"></string>
 	
 	<!--Stoneprocessing-->
@@ -76,50 +76,62 @@
 	<string name="act_"></string>
 	<string name="act_"></string>
 	
-	Сундук
-	Труп
-	Дерево
-	Скелет
-	Корзина
+	Г‘ГіГ­Г¤ГіГЄ
+	Г’Г°ГіГЇ
+	Г„ГҐГ°ГҐГўГ®
+	Г‘ГЄГҐГ«ГҐГІ
+	ГЉГ®Г°Г§ГЁГ­Г 
 	
 	
-	Свеча
-	Факел
+	Г‘ГўГҐГ·Г 
+	Г”Г ГЄГҐГ«
 	
 	
-	Ледник
-	Пустыня
-	Равнина
-	Степь
-	Холмы
-	Предгорье
-	Горы
-	Вода
+	Г‹ГҐГ¤Г­ГЁГЄ
+	ГЏГіГ±ГІГ»Г­Гї
+	ГђГ ГўГ­ГЁГ­Г 
+	Г‘ГІГҐГЇГј
+	Г•Г®Г«Г¬Г»
+	ГЏГ°ГҐГ¤ГЈГ®Г°ГјГҐ
+	ГѓГ®Г°Г»
+	Г‚Г®Г¤Г 
 	
-	Берег моря
-	Берег озера
-	Река
+	ГЃГҐГ°ГҐГЈ Г¬Г®Г°Гї
+	ГЃГҐГ°ГҐГЈ Г®Г§ГҐГ°Г 
+	ГђГҐГЄГ 
 	
-	Пещера
-	Шахта
-	Дом
-	Склад
-	Амбар
-	Хлев
-	Яма
-	Тюрьма
-	Магазин
-	Часовня
-	Собор
-	Могила
-	Корабль
-	Руины
+	ГЏГҐГ№ГҐГ°Г 
+	ГГ ГµГІГ 
+	Г„Г®Г¬
+	Г‘ГЄГ«Г Г¤
+	ГЂГ¬ГЎГ Г°
+	Г•Г«ГҐГў
+	ГџГ¬Г 
+	Г’ГѕГ°ГјГ¬Г 
+	ГЊГ ГЈГ Г§ГЁГ­
+	Г—Г Г±Г®ГўГ­Гї
+	Г‘Г®ГЎГ®Г°
+	ГЊГ®ГЈГЁГ«Г 
+	ГЉГ®Г°Г ГЎГ«Гј
+	ГђГіГЁГ­Г»
 	
-	Тележка
-	Воз
-	Конь
-	Плот
-	Лодка
-	Велосипед
+	Г’ГҐГ«ГҐГ¦ГЄГ 
+	Г‚Г®Г§
+	ГЉГ®Г­Гј
+	ГЏГ«Г®ГІ
+	Г‹Г®Г¤ГЄГ 
+	Г‚ГҐГ«Г®Г±ГЁГЇГҐГ¤
 	
 </strings>
+--------------------------------------------------------
+<string name="v3_equip_name_txt">Р­РєРёРїРёСЂРѕРІР°РЅРѕ</string>
+<string name="v3_inventory_name_txt">РџРѕР¶РёС‚РєРё</string>
+<string-array name="equip_txt">
+	<item>Р“РѕР»РѕРІР°</item>
+	<item>РўРѕСЂСЃ</item>
+	<item>РќРѕРіРё</item>
+	<item>Р СѓРєРё</item>
+	<item>РћР±СѓРІСЊ</item>
+	<item>РџСЂР°РІР°СЏ СЂСѓРєР°</item>
+	<item>Р›РµРІР°СЏ СЂСѓРєР°</item>
+</string-array>
