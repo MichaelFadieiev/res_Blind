@@ -489,17 +489,18 @@ for (int j=0; j < actorP.skills.size(); j++) {
 	skillsLL.addView(skillRowLL);
 }
 -------------------------------------------------------
-...
-String selected = spinner.getSelectedItem().toString();
-View proff_skl = spinner_proff.getSelectedItem();
-View hobby_skl = spinner_hobby.getSelectedItem();
-View inter_skl = spinner_inter.getSelectedItem();
+logs:
+String S = time[3] + ":" + time[4] + " " + time[2] + "." + time[1] + "." + time[0] 
+	   + "|Init person_" + actor1.personID 
+	   + "|Action #" + actionID + "|Param1_
 
-int[] skl1, skl2, skl3;
-skl1[0] = String.toInteger(proff_skl.getTag());
-skl1[1] = 40;
-skl1[0] = String.toInteger(hobby_skl.getTag());
-skl1[1] = 20;
-skl1[0] = String.toInteger(inter_skl.getTag());
-skl1[1] = 10;
-...
+-------------------------------------------------------
+добавить метод выбора действия для класса персонажа. Приоретизация:
+- Жажда (процент), Голод(%), Усталость(%), Род деятельности(МРВЗ), Трудоустройство(МРВЗ), 
+Наличие врагов(расстояние, статы, оружие), Здоровье(%, МРВЗ), Оружие(МРВЗ, наличие, навыки), Еда(МРВЗ, наличие),
+Подбор предметов(МРВЗ, свободный объём), Сражение(расстояние, наличие врага, угроза близким, статы, навыки),
+Воровство(наличие необходимых предметов, МРВЗ, наличие денег, наличие "легких" персонажей, навыки)
+ArraySet<byte, int> пар код действия - важность
+
+
+-----------------------------------------------------------
