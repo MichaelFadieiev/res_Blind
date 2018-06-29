@@ -504,3 +504,44 @@ ArraySet<byte, int> пар код действия - важность
 
 
 -----------------------------------------------------------
+//finding shortest and fastest path! 
+
+int directionX;
+if (x!=a) dX = (a-x)/Math.abs(a-x);
+int directionY;
+if (y!=b) dY = (b-y)/Math.abs(b-y);
+
+SparseArray<SparseArray<int[]>> paths = new SparseArray<>(1);
+SparseArray<int[]> path = new SparseArray<>(1);
+int i=0;
+path.put(i, new int[]{x, y, 0};
+paths.put(0, path);
+while (paths.get(0).get(i)[0]!=a || paths.get(0).get(i)[1]!=b) {
+	int tempInt = paths.size();
+	for (int j=0; j<tempInt; j++) {
+		int tempX = paths.get(j).get(i)[0];
+		int tempY = paths.get(j).get(i)[1];
+		
+		if (tempX!=a && tempY!=b) {
+			paths.put(paths.size()-1, paths.get(j).clone());
+paths.get(j).put(i+1, new int[]{tempX + dX; tempY; (paths.get(j).get(i)[2] + allTerritories.get(new int[]{tempX + dX; tempY}).timeCTravel}));
+paths.get(paths.size()-1).put(i+1, new int[]{tempX; tempY + dY; (paths.get(j).get(i)[2] + allTerritories.get(new int[]{tempX; tempY + dY}).timeCTravel}));
+		}
+		else if (tempX!=a) {
+paths.get(j).put(i+1, new int[]{tempX + dX; tempY; (paths.get(j).get(i)[2] + allTerritories.get(new int[]{tempX + dX; tempY}).timeCTravel}));
+		}
+		else if (tempY!=b) {
+paths.get(j).put(i+1, new int[]{tempX; tempY + dY; (paths.get(j).get(i)[2] + allTerritories.get(new int[]{tempX; tempY + dY}).timeCTravel}));
+		}
+		i++;
+}
+int bestPathInd = 0;
+for (int j=0; j<paths.size(); j++) {
+	if (paths.get(bestPathInd).get(i)[2]  > paths.get(j).get(i)[2]) {bestPathInd = j}
+}
+
+if (bestPathInd < paths.size() - 1) paths.removeAtRange(bestPathInd + 1, paths.size() - bestPathInd - 1)
+if (bestPathInd > 0) paths.removeAtRange(0, bestPathInd);
+	
+	
+	
